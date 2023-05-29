@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Collections;
+public class Autos{
+    public static void main(String[]args){
+        ArrayList<String>carros = new ArrayList<String>();
+        carros.add("Alfa Romeo");
+        carros.add("Audi");
+        carros.add("Mercedes Benz");
+        carros.add("Toyota");
+        carros.add("Ford");
+        carros.add("Dodge");
+        carros.add("Ferrari");
+        carros.add("Chevi");
+        carros.add("Renault");
+        carros.add("BMW");
+        carros.add("Honda");
+        carros.add("Hyundai");
+        carros.add("GMC");
+        carros.add("Porsche");
+        carros.add("Suzuki");
+        carros.add("Jeep");
+        carros.add("Jaguar");
+        carros.add("Chevrolet");
+        carros.add("RAM");
+        carros.add("Tesla");
+        carros.add("Volkswagen");
+        //Se da a conocer el primer coche de nuestra ArrayList
+        String primerCoche =carros.get(1);
+        System.out.println("El primer coche es: "+ primerCoche);
+        for(int i =0; i<10; i++);
+        //Se da a conocer el ultimo coche de nuestra ArrayList
+        String ultimoCoche =carros.get(20);
+        System.out.println("El ultimo coche es: "+ ultimoCoche);
+        for(int i =0; i<20; i++);
+        //Se removera un elemento de nuestra ArrayList
+        carros.remove(7);
+        System.out.println("Se removio el elemento: "+carros);
+        //Se da a conocer el primer coche de nuevo de la ArrayList
+        String primerAuto =carros.get(0);
+        System.out.println("El primer coche es: "+ primerAuto);
+        for(int i =0; i<9; i++);
+        //Se da a conocer la quinta posición de nuestra ArrayList
+        String quintoCoche =carros.get(5);
+        System.out.println("El quinto coche es: "+ quintoCoche);
+        for(int i =0; i<5; i++);
+        Collections.reverse(carros);
+        System.out.println("La lista al reves: "+carros);
+    }
+}
